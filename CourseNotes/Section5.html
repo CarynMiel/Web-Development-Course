@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 5 Web Notes</title>
+  </head>
+
+  <body>
+    <header>
+      <hr />
+
+      <nav>
+        <ul>
+          <li><a href="../main.html">Back to main page</a></li>
+        </ul>
+      </nav>
+
+      <hr />
+
+      <h1>Section 5 Web Notes: HTML: Forms and Tables</h1>
+
+      <hr />
+
+      <nav>
+        <h2>Table Of Contents</h2>
+        <ol start="0">
+          <li><a href="#5.0">What Matters in This Section</a></li>
+          <li><a href="#5.1">Unit Goals</a></li>
+          <li><a href="#5.2">Introducing HTML Tables</a></li>
+          <li><a href="#5.3">Tables: TR, TD, and TH Elements</a></li>
+          <li><a href="#5.4">Tables: Thead, Tbody, and Tfoot elements</a></li>
+          <li><a href="#5.5">Tables: Colspan and Rowspan</a></li>
+          <li>
+            <a href="#5.6">Coding Exercise 5: Tables Practice Exercise</a>
+          </li>
+          <li><a href="#5.7">The Form Element</a></li>
+          <li><a href="#5.8">Common Input Types</a></li>
+          <li><a href="#5.9">The All-Important Label</a></li>
+          <li><a href="#5.10">HTML Buttons</a></li>
+          <li><a href="#5.11">The Name Attribute</a></li>
+          <li><a href="#5.12">"Hijacking" Google and Reddit's Search</a></li>
+          <li><a href="#5.13">Radio Buttons, Checkboxes and Selects</a></li>
+          <li><a href="#5.14">Range and Text Area</a></li>
+          <li>
+            <a href="#5.15">Coding Exercise 6: Forms Practice Exercise</a>
+          </li>
+          <li><a href="#5.16">HTML5 Form Validations</a></li>
+          <li>
+            <a href="#5.17">Creating a Marathon Registration Form Intro</a>
+          </li>
+          <li>
+            <a href="#5.18">Creating a Marathon Registration Form Solution</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2 id="5.0">What Matters int This Section</h2>
+
+        <ul>
+          <li>
+            Crucial!
+            <ul>
+              <li>
+                <b>Medium</b> Tables Basics: &lt;table&gt;, &lt;tr&gt;,
+                &lt;td&gt;, and &lt;th&gt;
+              </li>
+              <li><b>Medium</b> Form Element Basics</li>
+              <li><b>Easy</b> Button Elements</li>
+              <li><b>Easy</b> Labels</li>
+              <li><b>easy</b> Common Input Types</li>
+            </ul>
+          </li>
+          <li>
+            Important
+            <ul>
+              <li>
+                <b>Medium</b> Table Sections: &lt;thead&gt;, &lt;tfoot&gt;, and
+                &lt;tbody&gt;
+              </li>
+              <li><b>Easy</b> Range and Text Areas</li>
+              <li><b>Easy</b> Form Validations</li>
+            </ul>
+          </li>
+          <li>
+            Nice To Have
+            <ul>
+              <li><b>Medium</b> Table Colspan and Rowspan</li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.1">Unit Goals</h2>
+
+        <h3>This that will be covered</h3>
+        <p>
+          Create well-formatted HTML tables <br />
+          Understand when and when not to use tables <br />
+          Explain the role of the form element <br />
+          Utilize a variety of form controls <br />
+          Define complex HTML forms <br />
+          Add HTML form validations <br />
+          Ensure accessibility of our forms
+        </p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.2">Introducing HTML Tables</h2>
+
+        <h3>What are tables?</h3>
+        <p>
+          tables are structured sets of data, made pu of rows and columns. They
+          can be a great way of displaying data clearly.
+        </p>
+
+        <h3>Early Usage</h3>
+        <p>
+          In the early days of the web, tables were commonly used to create page
+          layous. Today, you should only use the table element when you are
+          creating and actual data table.
+        </p>
+
+        <h3>Lots of Elements</h3>
+        <p>
+          To Create a table, you'll use 5-10 different elements! It can be
+          tricky to remember them all, but don't panic!
+        </p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.3">Tables: TR, TD, and TH Elements</h2>
+
+        <h3>Elements</h3>
+        <ul>
+          <li><b>&lt;table&gt;</b></li>
+          <li><b>&lt;td&gt;</b></li>
+          <li><b>&lt;tr&gt;</b></li>
+          <li><b>&lt;th&gt;</b></li>
+          <li>&lt;thead&gt;</li>
+          <li>&lt;tbody&gt;</li>
+          <li>&lt;tfoot&gt;</li>
+          <li>&lt;colgroup&gt;</li>
+          <li>&lt;caption&gt;</li>
+        </ul>
+
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+          >MDN table reference</a
+        >
+        <br>
+        <a href="../docs.html">Basic Tables</a>
+
+        <ul>
+            <li>td: table cell data</li>
+            <li>tr: table row</li>
+            <li>td is a child of tr</li>
+            <li>th: table header</li>
+            <li>th still needs to be in a tr tag</li>
+            <li>th is used instead of td</li>
+        </ul>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.4">Tables: Thead, Tbody, and Tfoot Elements</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.5">Tables: Colspan and Rowspan</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.6">Coding Exercise 5: Table Practice Exercise</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.7">The Form Element</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.8">Common Input Types</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.9">The All-Important Label</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.10">HTML Buttons</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.11">The Name Attribute</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.12">"Hijacking" Google and Reddit's Search</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.13">Radio Buttons, Checkboxes and Selects</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.14">Range and Text Area</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.15">Coding Exercise 6: Forms Practice Exercise</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.16">HTML5 Form Validations</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.17">Creating A Marathon Registration Form Intro</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+
+      <section>
+        <h2 id="5.18">Creating A Marathon Registration Form Solution</h2>
+
+        <p></p>
+
+        <hr />
+      </section>
+    </main>
+  </body>
+</html>
