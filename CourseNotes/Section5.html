@@ -102,7 +102,7 @@
       <section>
         <h2 id="5.1">Unit Goals</h2>
 
-        <h3>This that will be covered</h3>
+        <h3>Things that will be covered</h3>
         <p>
           Create well-formatted HTML tables <br />
           Understand when and when not to use tables <br />
@@ -150,23 +150,27 @@
 
         <h3>Elements</h3>
         <ul>
-          <li><b>&lt;table&gt;</b></li>
-          <li><b>&lt;td&gt;</b></li>
-          <li><b>&lt;tr&gt;</b></li>
-          <li><b>&lt;th&gt;</b></li>
-          <li>&lt;thead&gt;</li>
-          <li>&lt;tbody&gt;</li>
-          <li>&lt;tfoot&gt;</li>
-          <li>&lt;colgroup&gt;</li>
-          <li>&lt;caption&gt;</li>
+          <li><code><b>&lt;table&gt;</b></code></li>
+          <li><code><b>&lt;td&gt;</b></code></li>
+          <li><code><b>&lt;tr&gt;</b></code></li>
+          <li><code><b>&lt;th&gt;</b></code></li>
+          <li><code>&lt;thead&gt;</code></li>
+          <li><code>&lt;tbody&gt;</code></li>
+          <li><code>&lt;tfoot&gt;</code></li>
+          <li><code>&lt;colgroup&gt;</code></li>
+          <li><code>&lt;caption&gt;</code></li>
         </ul>
 
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+          target="_blank"
+          rel="noreferrer nooperner"
           >MDN table reference</a
         >
         <br />
-        <a href="../motoGear.html">Basic Table Practice</a>
+        <a href="../motoGear.html" target="_blank" rel="noreferrer nooperner"
+          >Basic Table Practice</a
+        >
 
         <ul>
           <li>
@@ -210,7 +214,55 @@
       <section>
         <h2 id="5.4">Tables: Thead, Tbody, and Tfoot Elements</h2>
 
-        <p></p>
+        <h3>Elements</h3>
+        <ul>
+          <li><code>&lt;table&gt;</code></li>
+          <li><code>&lt;td&gt;</code></li>
+          <li><code>&lt;tr&gt;</code></li>
+          <li><code>&lt;th&gt;</code></li>
+          <li><code><b>&lt;thead&gt;</b></code></li>
+          <li><code><b>&lt;tbody&gt;</b></code></li>
+          <li><code><b>&lt;tfoot&gt;</b></code></li>
+          <li><code>&lt;colgroup&gt;</code></li>
+          <li><code>&lt;caption&gt;</code></li>
+        </ul>
+
+        <a href="../motoGear.html" target="_blank" rel="noreferrer nooperner"
+          >Basic Table Practice</a
+        >
+
+        <p>
+          These elements are a way of just logically breaking up the table into
+          sections to specify that one part of the table is the body, the
+          header, and the footer. <br />
+          They are also good for semantic HTML so that the table is also easier
+          to read and easier to understand using a screen reader
+        </p>
+
+        <ul>
+          <li>
+            thead element
+            <ul>
+              <li>Specifies that section is the head</li>
+              <li>The parent of a row</li>
+            </ul>
+          </li>
+          <li>
+            tbody element
+            <ul>
+              <li>Specifies the body section of the table</li>
+              <li>The parent of a row</li>
+            </ul>
+          </li>
+          <li>
+            tfoot element
+            <ul>
+              <li>Specifies teh foot of the table</li>
+              <li>the parent of a row</li>
+              <li>not usually used since most tables don't have a foot</li>
+            </ul>
+          </li>
+        </ul>
 
         <hr />
       </section>
@@ -218,7 +270,27 @@
       <section>
         <h2 id="5.5">Tables: Colspan and Rowspan</h2>
 
-        <p></p>
+        <p>
+          How to make tables with cells that span across multiple cells. <br />
+          Merged cells that take up multiple rows or collums
+        </p>
+
+        <h3>Attributes</h3>
+
+        <ul>
+          <li>
+            colspan="number"
+            <ul>
+              <li>Will take up number cells going left and right</li>
+            </ul>
+          </li>
+          <li>
+            rowspan="number"
+            <ul>
+              <li>Will take up number cells going up and down</li>
+            </ul>
+          </li>
+        </ul>
 
         <hr />
       </section>
@@ -226,7 +298,80 @@
       <section>
         <h2 id="5.6">Coding Exercise 5: Table Practice Exercise</h2>
 
-        <p></p>
+        <p>
+          It's time to get some practice with all those table-related elements!
+          (yikes) Your goal is to create a 3x3 table, with proper headings. (so
+          it's really 4x3 if you count the heading cells) I've provided you with
+          some starter data in <code>index.html</code>, though you do not have
+          to use it. Just make sure you create a 3x3 table with a row of
+          headings at the top, using the correct semantic elements. You are
+          expected to use the following elements: <code>table</code>,
+          <code>thead</code>, <code>tr</code>, <code>th</code>,
+          <code>tbody</code>, and <code>td</code>.
+        </p>
+
+        <h3>Code:</h3>
+
+        <pre>
+          <code>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Subscription&lt;/th&gt;
+      &lt;th&gt;Price&lt;/th&gt;
+      &lt;th&gt;Support&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Free&lt;/td&gt;
+      &lt;td&gt;Free&lt;/td&gt;
+      &lt;td&gt;N/A&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Personal&lt;/td&gt;
+      &lt;td&gt;$9.99&lt;/td&gt;
+      &lt;td&gt;Weekdays&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Business&lt;/td&gt;
+      &lt;td&gt;$49.99&lt;/td&gt;
+      &lt;td&gt;24/7&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+          </code>
+        </pre>
+
+        <h3>Output:</h3>
+        <pre>
+          <table>
+            <thead>
+                <tr>
+                    <th>Subscription</th>
+                    <th>Price</th>
+                    <th>Support</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Free</td>
+                    <td>Free</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Personal</td>
+                    <td>$9.99</td>
+                    <td>Weekdays</td>
+                </tr>
+                <tr>
+                    <td>Business</td>
+                    <td>$49.99</td>
+                    <td>24/7</td>
+                </tr>
+            </tbody>
+        </table>
+        </pre>
 
         <hr />
       </section>
@@ -234,8 +379,51 @@
       <section>
         <h2 id="5.7">The Form Element</h2>
 
-        <p></p>
+        <h3>Creating Forms</h3>
+        <ul>
+          <li>
+            the <code>&lt;form&gt;</code> element itslef is a shell or container
+            that doesn't have any visual impact.
+            <ul>
+              <li>
+                Similar to the <code>&lt;table&gt;</code> element it the way
+                that the element alone doesn't add thing but when you add
+                children elements it shows something
+              </li>
+            </ul>
+          </li>
+          <li>
+            we then fill the form with a collection of inputs, checkboxes,
+            buttons, etc.
+            <ul>
+              <li>
+                Smilar to the elements that go in the
+                <code>&lt;table&gt;</code> element where the children of the
+                element does the visuals and the parent just says what that
+                section of code is
+              </li>
+            </ul>
+          </li>
+        </ul>
 
+        <h3>&lt;form&gt;</h3>
+
+        <ul>
+          <li>
+            The form element- represents a document section containing
+            interactive controls for submitting information.
+          </li>
+          <li>
+            The <em>action</em> attribute specifies WHERE the form data should
+            be sent.
+          </li>
+          <li>
+            The <em>method</em> attribute specifies which HTTP method should be
+            used (don't worry abou this for now)
+          </li>
+        </ul>
+
+        
         <hr />
       </section>
 
